@@ -1,0 +1,586 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Roboto",sans-serif;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    overflow-x: hidden;
+    background-color: #1f1e1f;
+}
+
+a[href="#sobrenos"],
+a[href="#contatos"],
+a[href="#cardapio"] {
+    scroll-behavior: smooth;
+}
+
+
+
+
+/*Menu*/
+
+.content {
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 10rem;
+    position: fixed;
+    background-color: #1f1e1f;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}
+
+.logo h3 {
+    color: white;
+    font-size: 1.6rem;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.content .list-menu {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content .list-menu li a {
+    padding: 3rem 1rem 2rem 1rem;
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all 200ms ease-in;/*transição de animação*/
+}
+
+.content .list-menu li a:hover {
+    background-color: #3333;
+    border-bottom: 4px solid #FBCF50;
+    color: #FBCF50;
+}
+
+
+/*--------/--------/--------/*Primeira seção--------/--------/--------/*/
+
+.primeira-secao {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(29,29,29,0.8), rgba(29,29,29,0.8)), url('../img/img/fundopizza.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-position-y: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.primeira-secao .conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.primeira-secao h1 {
+    color: #FBCF50;
+    font-size: 6rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.primeira-secao h2 {
+    color: rgb(177, 177, 177);
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.btn {
+    width: 480px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn button {
+    width: 230px;
+    height: 60px;
+    margin-top: 5rem;
+    background-color: #ffc506;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 300ms ease-in;
+}
+
+.btn button:hover {
+    background-color: transparent;
+    border: 1px solid #ffc506;
+    color: #ffc506;
+}
+
+
+/*--------/--------/--------/*Seção Sobre Nós--------/--------/--------/*/ 
+
+
+.sobre-nos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f1e1f;
+    width: 100%;
+    padding-bottom: 5rem;
+    color: white;
+}
+
+.sobre-nos img {
+    width: 300px;
+    height: 300px;
+    margin-top: 10rem;
+    margin-left: 10rem;
+    border: 2px solid rgb(155, 155, 155);
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentsobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5rem;
+}
+
+.contentsobre h2 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.contentsobre p {
+    font-size: 1.4rem;
+    text-align: center;
+    width: 500px;
+}
+
+
+/*--------/--------/--------/*Seção de cardápio--------/--------/--------/*/ 
+
+
+.cardapio {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(12, 12, 12, 0.8);
+}
+
+.cardapio h1 {
+    font-size: 5rem;
+    color: #e6e6e6;
+    text-transform: uppercase;
+}
+
+.itens-cardapio {
+    width: 90%;
+    margin: 2rem 0 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.itens-cardapio .info {
+    background-color: rgb(221, 221, 221);
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.itens-cardapio img {
+    width: 100%;
+    height: 200px;
+}
+
+
+.itens-cardapio .info h3 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}
+
+.itens-cardapio .info h4 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 150px 150px;
+}
+
+.itens-cardapio div {
+    background-color: #5e5252;
+    box-shadow: 0px 0px 4px 1px;
+}
+
+.itens-cardapio .info h4 span {
+    font-size: 1.6rem;
+    color: #585858;
+    margin-left: 1.5rem;
+    text-decoration: underline;
+}
+
+.itens-cardapio .info .btn-fazerpedido {
+    width: 200px;
+    height: 35px;
+    margin-top: 0.5rem;
+    background-color: #ffc506;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+.itens-cardapio .info .btn-fazerpedido:hover {
+    background-color: #5e5252;
+    color: #fff;
+}
+
+
+
+/*--------/--------/--------/*Contatos--------/--------/--------/*/ 
+
+
+.contatos {
+    width: 100%;
+    background-color: #1f1e1f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: #fff;
+    padding-bottom: 4rem;
+}
+
+.contatos h3 {
+    font-size: 6rem;
+    margin-bottom: 3rem;
+}
+
+.contatos-secao {
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+.contatos-secao i {
+    margin-right: 1rem;
+}
+
+.contatos-secao div {
+    cursor: pointer;
+    transition: all 100ms ease-in;
+}
+
+.contatos-secao div:hover{
+    color: #FBCF50;
+}
+
+.rodape {
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #000;
+    font-size: 1.3rem;
+}
+
+
+
+/*--------/--------/--------/*Media Queries--------/--------/--------/*/ 
+
+
+
+
+@media (max-width: 1050px) {
+
+    html {
+        font-size: 50%;
+    }
+    .main {
+        display: block;
+    }
+
+    .content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 20%;
+        padding-left: 6px;
+    }
+
+    .logo {
+        margin-bottom: 3rem;
+    }
+
+    .sobre-nos img {
+        width: 500px;
+        margin-left: 5rem;
+    }
+}
+
+
+@media (max-width: 828px) {
+    html {
+        font-size: 40%;
+    }
+
+    .btn {
+        width: 50%;
+        gap: 20px;
+    }
+
+    .content {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 15%;
+        padding: 0px 40px;
+    }
+
+    .content .list-menu {
+        display: none;
+    }
+
+    .content .menu-toggle {
+        width: 30px;
+        height: 30px;
+    }
+
+    .one,
+    .two,
+    .three {
+        width: 80%;
+        height: 2px;
+        background-color: #fff;
+        margin: 6px auto;
+        transition-duration: 0.5s;
+    }
+
+    .itens-cardapio {
+        grid-template-columns: repeat(2, minmax(50px, 350px));
+    }
+
+    .itens-cardapio .info h4 {
+        padding-left: 17rem;
+    }
+
+    .content.on {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(30, 31, 30, 0.8);
+        width: 100vw;
+        height: 100vh;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content.on .logo {
+        display: none;
+    }
+
+    .content.on .menu-toggle {
+        position: absolute;
+        right: 40px;
+        top: 10px;
+    }
+
+    .content.on .menu-toggle .two {
+        opacity: 0;
+    }
+
+    .content.on .menu-toggle .one {
+        transform: rotate(45deg) translate(5px,-8px);
+    }
+
+    .content.on .menu-toggle .three {
+        transform: rotate(-45deg) translate(20px, -6px);
+    }
+
+    .content.on .list-menu {
+        display: block;
+    }
+
+    .content.on .list-menu li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .content.on .list-menu li a {
+        font-size: 2rem;
+    }
+
+    .contatos-secao {
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .contatos-secao div {
+        margin: 1rem;
+    }
+
+
+}
+
+@media (max-width: 657px) {
+    .conteudo-principal h1 {
+        width: 500px;
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    .conteudo-principal h2 {
+        font-size: 2rem;
+    }
+
+    .itens-cardapio {
+        grid-template-columns: repeat(auto-fill, minmax(50px, 350px));
+    }
+
+    .sobre-nos img {
+        width: 400px;
+        height: 250px;
+        margin-left: 10px;
+    }
+
+    .sobre-nos p {
+        text-align: center;
+        width: 400px;
+    }
+
+    .contatos-secao {
+        width: 300px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .btn {
+        flex-direction: column;
+        width: 250px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn button {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    .conteudo-principal h1 {
+        width: 350px;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .conteudo-principal h2 {
+        width: 200px;
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 395px) {
+    .sobre-nos img {
+        width: 250px;
+        height: auto;
+        margin-left: 10px;
+    }
+
+    .contentsobre p {
+        text-align: center;
+        width: 250px;
+    }
+
+    .itens-cardapio {
+        width: 50%;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fill, minmax(50px, 350px));
+    }
+
+    .itens-cardapio img {
+        width: 80%;
+        height: auto;
+    }
+
+    .itens-cardapio div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .itens-cardapio .info {
+        width: 100%;
+        height: 150px;
+    }
+
+    .itens-cardapio .info h4 {
+        grid-template-columns: 93px 150px;
+    }
+
+    .itens-cardapio .info .btn-fazerpedido {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+} 
+
+
+
+
+
+
+
+
+
+
